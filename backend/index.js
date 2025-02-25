@@ -16,7 +16,7 @@ app.use("/ping", (req, res) => {
 })
 
 app.use(cors({
-  origin:"https://mern-auth-3-qsw15q1gs-mohd-meraj-ansaris-projects.vercel.app",
+  origin:"https://mern-auth-3-ui.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials:true
