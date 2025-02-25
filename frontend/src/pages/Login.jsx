@@ -16,7 +16,8 @@ function Login() {
         "https://mern-auth-3-api.vercel.app/api/users/login",
         { email, password },
         {
-          headers: { "Content-Type": "application/json" }
+          headers: { "Content-Type": "application/json" },
+          withCredentials: true,
         }
       );
       console.log(data.Name);
