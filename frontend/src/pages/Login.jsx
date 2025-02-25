@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://mern-auth-3-api.vercel.app/api/users/login",
+        "https://mern-auth-3-api-git-main-mohd-meraj-ansaris-projects.vercel.app/api/users/login",
         { email, password },
         {
           headers: { "Content-Type": "application/json" },
