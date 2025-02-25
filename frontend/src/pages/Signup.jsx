@@ -17,7 +17,8 @@ function Signup() {
         "https://mern-auth-3-api.vercel.app/api/users/signup",
         { name, email, password },
         {
-          headers: { "Content-Type": "application/json" }
+          headers: { "Content-Type": "application/json" },
+          withCredentials: true,
         }
       );
       handleSuccess("User sign up successful");
