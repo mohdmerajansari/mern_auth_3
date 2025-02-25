@@ -17,8 +17,7 @@ function Signup() {
         "https://mern-auth-3-api-git-main-mohd-meraj-ansaris-projects.vercel.app/api/users/signup",
         { name, email, password },
         {
-          headers: { "Content-Type": "application/json" },
-          withCredentials: true,
+          headers: { "Content-Type": "application/json" }
         }
       );
       handleSuccess("User sign up successful");
