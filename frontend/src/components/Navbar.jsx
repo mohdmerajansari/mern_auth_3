@@ -19,7 +19,7 @@ function Navbar() {
               Login
             </a>
             <a
-              href="https://mern-auth-3-oh17.onrender.com/signup"
+              href="/signup"
               className=" text-gray-700 hover:bg-indigo-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
             >
               Sign Up
