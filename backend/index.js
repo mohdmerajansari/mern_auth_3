@@ -15,7 +15,13 @@ app.use("/ping", (req, res) => {
   res.send("Pong")
 })
 
-app.use(cors())
+app.use(cors({
+  origin:"https://mern-auth-3-ui.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials:true
+}))
+
 
 app.use("/api/users", userRouter);
 
