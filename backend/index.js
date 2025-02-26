@@ -16,7 +16,8 @@ app.use(cors({
     'http://localhost:5173',
     'http://localhost:3000',
     'https://mern-auth-3-ui.vercel.app',
-    'https://mern-auth-3-ui.onrender.com'
+    'https://mern-auth-3-ui.onrender.com',
+    'https://mern-auth-3-ui.onrender.com/signup'
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
