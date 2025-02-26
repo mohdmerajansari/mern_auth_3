@@ -11,26 +11,11 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    'http://localhost:3000',
-    'https://mern-auth-3-ui.vercel.app',
-    'https://mern-auth-3-ui.onrender.com',
-    'https://mern-auth-3-ui.onrender.com/signup',
-    'https://benevolent-madeleine-c6a0cd.netlify.app'
-    
-  ],
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
+app.use(cors());
 
 app.use("/ping", (req, res) => {
   res.send("Pong")
 })
-
-
 
 app.use("/api/users", userRouter);
 
