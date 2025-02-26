@@ -13,11 +13,14 @@ function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await fetch("http://localhost:3000/api/users/signup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, password }),
-      });
+      const { data } = await axios.post(
+        "http://localhost:3000/api/users/signup",
+        { name, email, password },
+        {
+          headers: { "Content-Type": "application/json" },
+          withCredentials: true,
+        }
+      );
       handleSuccess("User sign up successful");
       setTimeout(() => {
         navigate("/login");
