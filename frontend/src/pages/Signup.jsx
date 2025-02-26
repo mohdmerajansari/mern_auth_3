@@ -13,7 +13,7 @@ function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await fetch("https://mern-auth-3-api.vercel.app/users/signup", {
+      const { data } = await fetch("https://mern-auth-3-oh17.onrender.com/users/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password }),
