@@ -21,6 +21,7 @@ function Signup() {
           withCredentials: true,
         }
       );
+
       handleSuccess("User sign up successful");
       setTimeout(() => {
         navigate("/login");

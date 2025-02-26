@@ -15,7 +15,11 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'http://localhost:3000',
-    'https://mern-auth-3-ui.vercel.app' 
+    'https://mern-auth-3-ui.vercel.app',
+    'https://mern-auth-3-ui.onrender.com',
+    'https://mern-auth-3-ui.onrender.com/signup',
+    'https://benevolent-madeleine-c6a0cd.netlify.app'
+    
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
