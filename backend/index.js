@@ -16,6 +16,7 @@ app.use("/ping", (req, res) => {
 })
 
 app.use(cors({
+<<<<<<< HEAD
   origin: [
     'http://localhost:5173',
     'http://localhost:3000',
@@ -25,6 +26,14 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
+=======
+  origin:"https://mern-auth-3-ui.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials:true
+}))
+>>>>>>> 87515ff1bacbff04e723e16f0e8961307169cb1b
+
 
 app.use("/api/users", userRouter);
 

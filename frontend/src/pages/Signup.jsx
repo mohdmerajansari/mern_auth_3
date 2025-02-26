@@ -13,14 +13,11 @@ function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post(
-        "https://mern-auth-3-api.vercel.app/api/users/signup",
-        { name, email, password },
-        {
-          headers: { "Content-Type": "application/json" },
-          withCredentials: true,
-        }
-      );
+      const { data } = await fetch("http://localhost:3000/api/users/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, password }),
+      });
       handleSuccess("User sign up successful");
       setTimeout(() => {
         navigate("/login");
